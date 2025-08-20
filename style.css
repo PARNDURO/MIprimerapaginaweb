@@ -111,3 +111,63 @@ form button:hover {
 .btn-crear:hover {
     background-color: turquoise;
 }
+
+/* Estilos para el carrusel de imágenes */
+#carouselContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#imageCarousel {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+/* Estilos para el input de archivos */
+#imageInput {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* Responsive para dispositivos móviles */
+@media (max-width: 768px) {
+    #carouselContainer {
+        max-width: 95%;
+    }
+    
+    .carousel-item img {
+        max-height: 300px;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+}
