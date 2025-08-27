@@ -10,92 +10,240 @@
     <body>
         <h1>DTG</h1>
         <h3>(Don't Touch the Grass)</h3>
-        <div> 
-            <h2 style="text-transform: uppercase;">there's a starman waiting in the sky!</h2>
-            <div class="video-container">          
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/hjUGJHy5aLg"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-        <div> 
-            <h2 style="text-transform: uppercase;">Toothless!</h2>
-            <div class="video-container">          
-            <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/22w7z_lT6YM"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div> 
-            <h2 style="text-transform: uppercase;">Ohana means family!</h2>
-            <div class="video-container">          
-            <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/VWqJifMMgZE"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div> 
-            <h2 style="text-transform: uppercase;">the best enemy is a coin!</h2>
-            <div class="video-container">          
-                <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/UWMzKXsY9A4"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div> 
-            <h2 style="text-transform: uppercase;">Minecraft!</h2>
-            <div class="video-container">          
-                <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/wJO_vIDZn-I"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-        <h2 class="mb-4">Carrusel de Imágenes</h2>
+        
+        <!-- Sistema de Navegación por Pestañas -->
+        <ul class="nav nav-tabs justify-content-center mb-4" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Inicio</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="videos-tab" data-bs-toggle="tab" data-bs-target="#videos" type="button" role="tab" aria-controls="videos" aria-selected="false">Videos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="candybar-tab" data-bs-toggle="tab" data-bs-target="#candybar" type="button" role="tab" aria-controls="candybar" aria-selected="false">Candy Bar</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="galeria-tab" data-bs-toggle="tab" data-bs-target="#galeria" type="button" role="tab" aria-controls="galeria" aria-selected="false">Galería</button>
+            </li>
+        </ul>
 
-        <input type="file" id="imageInput" multiple accept="image/*" class="form-control mb-3">
-
-        <div id="carouselContainer">
-            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner" id="carouselImages">
-                    <!-- Imágenes por defecto -->
-
-
-                    <div class="carousel-item active">
-                        <img src="Image/image.png" class="d-block w-100 img-fluid" alt="Imagen 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Image/up.jpg" class="d-block w-100 img-fluid" alt="Up">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Image/bi.jpeg" class="d-block w-100 img-fluid" alt="BI">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Image/irla.jpeg" class="d-block w-100 img-fluid" alt="Irla">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Image/ir.jpeg" class="d-block w-100 img-fluid" alt="IR">
+        <!-- Contenido de las Pestañas -->
+        <div class="tab-content" id="myTabContent">
+            <!-- Pestaña Inicio -->
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container">
+                    <h2>¡Bienvenido a DTG!</h2>
+                    <p class="lead">Tu página personal de entretenimiento y diversión</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>¿Qué encontrarás aquí?</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">🎬 Videos musicales y películas</li>
+                                <li class="list-group-item">🍬 Candy Bar virtual</li>
+                                <li class="list-group-item">🖼️ Galería de imágenes</li>
+                                <li class="list-group-item">🎮 Contenido gaming</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Últimas novedades</h3>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">¡Nueva sección Candy Bar!</h5>
+                                    <p class="card-text">Disfruta de dulces virtuales y recetas deliciosas</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+            </div>
+
+            <!-- Pestaña Videos -->
+            <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
+                <div class="container">
+                    <div> 
+                        <h2 style="text-transform: uppercase;">there's a starman waiting in the sky!</h2>
+                        <div class="video-container">          
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/hjUGJHy5aLg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div> 
+                        <h2 style="text-transform: uppercase;">Toothless!</h2>
+                        <div class="video-container">          
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/22w7z_lT6YM"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div> 
+                        <h2 style="text-transform: uppercase;">Ohana means family!</h2>
+                        <div class="video-container">          
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/VWqJifMMgZE"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div> 
+                        <h2 style="text-transform: uppercase;">the best enemy is a coin!</h2>
+                        <div class="video-container">          
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/UWMzKXsY9A4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div> 
+                        <h2 style="text-transform: uppercase;">Minecraft!</h2>
+                        <div class="video-container">          
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/wJO_vIDZn-I"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pestaña Candy Bar -->
+            <div class="tab-pane fade" id="candybar" role="tabpanel" aria-labelledby="candybar-tab">
+                <div class="container">
+                    <h2>🍬 Candy Bar Virtual 🍬</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card candy-card">
+                                <img src="https://es.tonyschocolonely.com/cdn/shop/files/milk-chocolate-32-tonys-chocolonely-5.png?v=1732228887" class="card-img-top" alt="Chocolate">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chocolate Premium</h5>
+                                    <p class="card-text">Delicioso chocolate belga con almendras</p>
+                                    <button class="btn btn-primary btn-candy">¡Quiero uno!</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card candy-card">
+                                <img src="https://i.pinimg.com/474x/e9/6f/f1/e96ff14fa23a680bbe9d7941ed69ee0e.jpg" class="card-img-top" alt="Caramelo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Caramelos Artesanales</h5>
+                                    <p class="card-text">Caramelos caseros de diferentes sabores</p>
+                                    <button class="btn btn-primary btn-candy">¡Quiero uno!</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card candy-card">
+                                <img src="https://acdn-us.mitiendanube.com/stores/002/363/415/products/3_mesa-de-trabajo-1-copia-4-4d93afd8cecc4d267517025791554761-640-0.jpg" class="card-img-top" alt="Gomitas">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gomitas de Frutas</h5>
+                                    <p class="card-text">Gomitas coloridas con sabores naturales</p>
+                                    <button class="btn btn-primary btn-candy">¡Quiero una!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h3>🍰 Recetas Dulces</h3>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h5>Brownies de Chocolate</h5>
+                                    <p>Deliciosos brownies caseros con nueces</p>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h5>Galletas de Mantequilla</h5>
+                                    <p>Galletas crujientes y doradas</p>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h5>Tiramisú Italiano</h5>
+                                    <p>Postre clásico con café y mascarpone</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>🎯 Juego del Dulce</h3>
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h4>¡Encuentra el dulce escondido!</h4>
+                                    <button class="btn btn-success btn-lg" id="findCandy">Buscar Dulce</button>
+                                    <p class="mt-3" id="candyResult"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pestaña Galería -->
+            <div class="tab-pane fade" id="galeria" role="tabpanel" aria-labelledby="galeria-tab">
+                <div class="container">
+                    <h2 class="mb-4">Carrusel de Imágenes</h2>
+                    <input type="file" id="imageInput" multiple accept="image/*" class="form-control mb-3">
+                    <div id="carouselContainer">
+                        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" id="carouselImages">
+                                <div class="carousel-item active">
+                                    <img src="Image/image.png" class="d-block w-100 img-fluid" alt="Imagen 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Image/up.jpg" class="d-block w-100 img-fluid" alt="Up">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Image/bi.jpeg" class="d-block w-100 img-fluid" alt="BI">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Image/irla.jpeg" class="d-block w-100 img-fluid" alt="Irla">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Image/ir.jpeg" class="d-block w-100 img-fluid" alt="IR">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="script.js"></script>
+        <script>
+            // Script adicional para asegurar que las pestañas funcionen
+            document.addEventListener('DOMContentLoaded', function() {
+                // Asegurar que la primera pestaña esté visible
+                const homeTab = document.getElementById('home');
+                const homeButton = document.getElementById('home-tab');
+                
+                if (homeTab && homeButton) {
+                    homeTab.classList.add('show', 'active');
+                    homeButton.classList.add('active');
+                    homeButton.setAttribute('aria-selected', 'true');
+                }
+                
+                // Ocultar todas las demás pestañas
+                const allTabs = document.querySelectorAll('.tab-pane:not(#home)');
+                allTabs.forEach(tab => {
+                    tab.classList.remove('show', 'active');
+                });
+            });
+        </script>
     </body>
 </html>
