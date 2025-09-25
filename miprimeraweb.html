@@ -28,6 +28,9 @@
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="cartelera-tab" data-bs-toggle="tab" data-bs-target="#cartelera" type="button" role="tab" aria-controls="cartelera" aria-selected="false">Cartelera</button>
             </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Game-tab" data-bs-toggle="tab" data-bs-target="#Game" type="button" role="tab" aria-controls="Game" aria-selected="false">Game</button>
+            </li>
         </ul>
 
         <!-- Contenido de las Pestañas -->
@@ -45,7 +48,7 @@
                                 <li class="list-group-item"><a class="nav-link" id="candybar-tab" data-bs-toggle="tab" href="#candybar" role="tab" aria-controls="candybar" aria-selected="true">🍬 Candy Bar virtual</a></li>
                                 <li class="list-group-item"><a class="nav-link" id="galeria-tab" data-bs-toggle="tab" href="#galeria" role="tab" aria-controls="galeria" aria-selected="true">🖼️ Galería de imágenes</a></li>
                                 <li class="list-group-item"><a class="nav-link" id="cartelera-tab" data-bs-toggle="tab" href="#cartelera" role="tab" aria-controls="cartelera" aria-selected="true">🎞 Cartelera</a></li>
-                                <li class="list-group-item"><a class="nav-link" id="cartelera-tab" data-bs-toggle="tab" href="#cartelera" role="tab" aria-controls="cartelera" aria-selected="true">🎮 Contenido gaming</a></li>
+                                <li class="list-group-item"><a class="nav-link" id="Game-tab" data-bs-toggle="tab" href="#Game" role="tab" aria-controls="Game" aria-selected="true">🎮 Contenido gaming</a></li>
                             </ul>
                         </div>
                         <div class="col-md-6">
@@ -198,8 +201,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Pestaña Galería -->
             <div class="tab-pane fade" id="galeria" role="tabpanel" aria-labelledby="galeria-tab">
                 <div class="container">
                     <h2 class="mb-4">Carrusel de Imágenes</h2>
@@ -235,7 +236,7 @@
             </div>
 
             <!--Pestana Cartelera-->
-            <div class="tab-pane fade" id="cartelera" role="tabpanel" aria-labelledby="cartelera-tab
+            <div class="tab-pane fade" id="cartelera" role="tabpanel" aria-labelledby="cartelera-tab">
                 <div class="container">
                     <div class="container">
                         <div class="row row-cols-12">
@@ -379,6 +380,34 @@
                       </div>
                 </div>
             </div>
+            <!--Pestana gaming-->
+            <div class="tab-pane fade" id="Game" role="tabpanel" aria-labelledby="Game-tab">
+                <div class="container">
+                    <h2 class="mb-4">Juegos del momento</h2>
+                    <input type="file" id="imageInput" multiple accept="image/*" class="form-control mb-3">
+                    <div id="GameContainer">
+                        <div id="imageGame" class="Game slide" data-bs-ride="Game">
+                            <div class="Game-inner" id="GameImages">
+                                <div class="carousel-item active">
+                                    <img src="imageVI.png" class="d-block w-100 img-fluid" alt="Imagen 2">
+                                </div>
+                                <div class="Game-item">
+                                    <img src="imagedlt.png" class="d-block w-100 img-fluid" alt="Up">
+                                </div>
+                                <div class="Game-item">
+                                    <img src="imageS.png" class="d-block w-100 img-fluid" alt="BI">
+                                </div>
+                                <div class="Game-item">
+                                    <img src="imageSRC.png" class="d-block w-100 img-fluid" alt="Irla">
+                                </div>
+                                <div class="Game-item">
+                                    <img src="imageSMB3D.png" class="d-block w-100 img-fluid" alt="IR">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
