@@ -171,3 +171,218 @@ form button:hover {
         height: 40px;
     }
 }
+
+/* Estilos para las pestañas de navegación */
+.nav-tabs {
+    border-bottom: 2px solid rgb(175, 139, 209);
+    margin-bottom: 30px;
+}
+
+.nav-tabs .nav-link {
+    color: rgb(175, 139, 209);
+    border: none;
+    border-radius: 10px 10px 0 0;
+    margin-right: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+    color: white;
+    background-color: rgba(175, 139, 209, 0.3);
+    border: none;
+}
+
+.nav-tabs .nav-link.active {
+    color: white;
+    background-color: rgb(175, 139, 209);
+    border: none;
+}
+
+/* Estilos para el contenido de las pestañas */
+.tab-content {
+    min-height: 500px;
+}
+
+.tab-pane {
+    padding: 20px 0;
+}
+
+/* Estilos para la sección Candy Bar */
+.candy-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    margin-bottom: 20px;
+}
+
+.candy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(175, 139, 209, 0.3);
+    border-color: rgb(175, 139, 209);
+}
+
+.candy-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-candy {
+    background-color: rgb(175, 139, 209);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-candy:hover {
+    background-color: rgb(139, 103, 173);
+    transform: scale(1.05);
+}
+
+/* Estilos para las listas de recetas */
+.list-group-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgb(175, 139, 209);
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: rgb(175, 139, 209);
+    color: white;
+    transform: translateX(10px);
+}
+
+.list-group-item h5 {
+    color: inherit;
+    margin-bottom: 5px;
+}
+
+/* Estilos para el juego del dulce */
+#findCandy {
+    background-color: rgb(69, 164, 201);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#findCandy:hover {
+    background-color: turquoise;
+    transform: scale(1.1);
+}
+
+#candyResult {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(175, 139, 209);
+}
+
+/* Estilos para la página de inicio */
+.lead {
+    color: rgb(175, 139, 209);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.list-group-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgb(175, 139, 209);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(175, 139, 209, 0.3);
+}
+
+/* Animaciones y efectos visuales */
+@keyframes candyFound {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Estilos para el modal de recetas */
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 3px solid rgb(175, 139, 209);
+    border-radius: 15px;
+}
+
+.modal-header {
+    background-color: rgb(175, 139, 209);
+    color: white;
+    border-radius: 12px 12px 0 0;
+}
+
+.modal-title {
+    color: white;
+    font-weight: bold;
+}
+
+.recipe-details {
+    background-color: rgba(175, 139, 209, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.recipe-details h6 {
+    color: rgb(175, 139, 209);
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.recipe-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.recipe-details li {
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(175, 139, 209, 0.3);
+}
+
+.recipe-details li:before {
+    content: "🍰 ";
+    margin-right: 8px;
+}
+
+/* Efectos de hover mejorados */
+.btn-candy:active {
+    transform: scale(0.95);
+}
+
+.candy-card:active {
+    transform: scale(0.98);
+}
+
+/* Responsive para las pestañas */
+@media (max-width: 768px) {
+    .nav-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .nav-tabs .nav-link {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    
+    .candy-card {
+        margin-bottom: 15px;
+    }
+    
+    .tab-content {
+        min-height: 400px;
+    }
+}

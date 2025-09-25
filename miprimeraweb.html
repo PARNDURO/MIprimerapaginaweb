@@ -10,92 +10,427 @@
     <body>
         <h1>DTG</h1>
         <h3>(Don't Touch the Grass)</h3>
-        <div> 
-            <h2 style="text-transform: uppercase;">there's a starman waiting in the sky!</h2>
-            <div class="video-container">          
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/hjUGJHy5aLg"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-        <div> 
-            <h2 style="text-transform: uppercase;">Toothless!</h2>
-            <div class="video-container">          
-            <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/22w7z_lT6YM"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div> 
-            <h2 style="text-transform: uppercase;">Ohana means family!</h2>
-            <div class="video-container">          
-            <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/VWqJifMMgZE"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div> 
-            <h2 style="text-transform: uppercase;">the best enemy is a coin!</h2>
-            <div class="video-container">          
-                <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/UWMzKXsY9A4"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div> 
-            <h2 style="text-transform: uppercase;">Minecraft!</h2>
-            <div class="video-container">          
-                <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/wJO_vIDZn-I"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-        <h2 class="mb-4">Carrusel de Imágenes</h2>
+        
+        <!-- Sistema de Navegación por Pestañas -->
+        <ul class="nav nav-tabs justify-content-center mb-4" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Inicio</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="videos-tab" data-bs-toggle="tab" data-bs-target="#videos" type="button" role="tab" aria-controls="videos" aria-selected="false">Videos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="candybar-tab" data-bs-toggle="tab" data-bs-target="#candybar" type="button" role="tab" aria-controls="candybar" aria-selected="false">Candy Bar</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="galeria-tab" data-bs-toggle="tab" data-bs-target="#galeria" type="button" role="tab" aria-controls="galeria" aria-selected="false">Galería</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="cartelera-tab" data-bs-toggle="tab" data-bs-target="#cartelera" type="button" role="tab" aria-controls="cartelera" aria-selected="false">Cartelera</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Game-tab" data-bs-toggle="tab" data-bs-target="#Game" type="button" role="tab" aria-controls="Game" aria-selected="false">Game</button>
+            </li>
+        </ul>
 
-        <input type="file" id="imageInput" multiple accept="image/*" class="form-control mb-3">
-
-        <div id="carouselContainer">
-            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner" id="carouselImages">
-                    <!-- Imágenes por defecto -->
-
-
-                    <div class="carousel-item active">
-                        <img src="Image/image.png" class="d-block w-100 img-fluid" alt="Imagen 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Image/up.jpg" class="d-block w-100 img-fluid" alt="Up">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Image/bi.jpeg" class="d-block w-100 img-fluid" alt="BI">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Image/irla.jpeg" class="d-block w-100 img-fluid" alt="Irla">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Image/ir.jpeg" class="d-block w-100 img-fluid" alt="IR">
+        <!-- Contenido de las Pestañas -->
+        <div class="tab-content" id="myTabContent">
+            <!-- Pestaña Inicio -->
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container">
+                    <h2>¡Bienvenido a DTG!</h2>
+                    <p class="lead">Tu página personal de entretenimiento y diversión</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>¿Qué encontrarás aquí?</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a class="nav-link" id="videos-tab" data-bs-toggle="tab" href="#videos" role="tab" aria-controls="videos" aria-selected="true">🎬 Videos musicales y películas</a></li>
+                                <li class="list-group-item"><a class="nav-link" id="candybar-tab" data-bs-toggle="tab" href="#candybar" role="tab" aria-controls="candybar" aria-selected="true">🍬 Candy Bar virtual</a></li>
+                                <li class="list-group-item"><a class="nav-link" id="galeria-tab" data-bs-toggle="tab" href="#galeria" role="tab" aria-controls="galeria" aria-selected="true">🖼️ Galería de imágenes</a></li>
+                                <li class="list-group-item"><a class="nav-link" id="cartelera-tab" data-bs-toggle="tab" href="#cartelera" role="tab" aria-controls="cartelera" aria-selected="true">🎞 Cartelera</a></li>
+                                <li class="list-group-item"><a class="nav-link" id="Game-tab" data-bs-toggle="tab" href="#Game" role="tab" aria-controls="Game" aria-selected="true">🎮 Contenido gaming</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Últimas novedades</h3>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">¡Nueva sección Candy Bar!</h5>
+                                    <p class="card-text">Disfruta de dulces virtuales y recetas deliciosas</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
             </div>
+
+            <!-- Pestaña Videos -->
+            <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
+                <div class="container">
+                    <div> 
+                        <h2 style="text-transform: uppercase;">there's a starman waiting in the sky!</h2>
+                        <div class="video-container">          
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/hjUGJHy5aLg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div> 
+                        <h2 style="text-transform: uppercase;">Toothless!</h2>
+                        <div class="video-container">          
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/22w7z_lT6YM"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div> 
+                        <h2 style="text-transform: uppercase;">Ohana means family!</h2>
+                        <div class="video-container">          
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/VWqJifMMgZE"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div> 
+                        <h2 style="text-transform: uppercase;">the best enemy is a coin!</h2>
+                        <div class="video-container">          
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/UWMzKXsY9A4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div> 
+                        <h2 style="text-transform: uppercase;">Minecraft!</h2>
+                        <div class="video-container">          
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/wJO_vIDZn-I"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pestaña Candy Bar -->
+            <div class="tab-pane fade" id="candybar" role="tabpanel" aria-labelledby="candybar-tab">
+                <div class="container">
+                    <h2>🍬 Candy Bar Virtual 🍬</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card candy-card">
+                                <img src="https://es.tonyschocolonely.com/cdn/shop/files/milk-chocolate-32-tonys-chocolonely-5.png?v=1732228887" class="card-img-top" alt="Chocolate">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chocolate Premium</h5>
+                                    <p class="card-text">Delicioso chocolate belga con almendras</p>
+                                    <button class="btn btn-primary btn-candy">¡Quiero uno!</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card candy-card">
+                                <img src="https://i.pinimg.com/474x/e9/6f/f1/e96ff14fa23a680bbe9d7941ed69ee0e.jpg" class="card-img-top" alt="Caramelo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Caramelos Artesanales</h5>
+                                    <p class="card-text">Caramelos caseros de diferentes sabores</p>
+                                    <button class="btn btn-primary btn-candy">¡Quiero uno!</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card candy-card">
+                                <img src="https://acdn-us.mitiendanube.com/stores/002/363/415/products/3_mesa-de-trabajo-1-copia-4-4d93afd8cecc4d267517025791554761-640-0.jpg" class="card-img-top" alt="Gomitas">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gomitas de Frutas</h5>
+                                    <p class="card-text">Gomitas coloridas con sabores naturales</p>
+                                    <button class="btn btn-primary btn-candy">¡Quiero una!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h3>🍰 Recetas Dulces</h3>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h5>Brownies de Chocolate</h5>
+                                    <p>Deliciosos brownies caseros con nueces</p>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h5>Galletas de Mantequilla</h5>
+                                    <p>Galletas crujientes y doradas</p>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h5>Tiramisú Italiano</h5>
+                                    <p>Postre clásico con café y mascarpone</p>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h5>Galletas de chocolate cremosas</h5>
+                                    <p>Galletas con crema de chocolate en el medio</p>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <h5>Capuchino</h5>
+                                    <p>Café espresso, leche vaporizada y una generosa capa de espuma de leche</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>🎯 Juego del Dulce</h3>
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h4>¡Encuentra el dulce escondido!</h4>
+                                    <button class="btn btn-success btn-lg" id="findCandy">Buscar Dulce</button>
+                                    <p class="mt-3" id="candyResult"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="galeria" role="tabpanel" aria-labelledby="galeria-tab">
+                <div class="container">
+                    <h2 class="mb-4">Carrusel de Imágenes</h2>
+                    <input type="file" id="imageInput" multiple accept="image/*" class="form-control mb-3">
+                    <div id="carouselContainer">
+                        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" id="carouselImages">
+                                <div class="carousel-item active">
+                                    <img src="Image/image.png" class="d-block w-100 img-fluid" alt="Imagen 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Image/up.jpg" class="d-block w-100 img-fluid" alt="Up">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Image/bi.jpeg" class="d-block w-100 img-fluid" alt="BI">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Image/irla.jpeg" class="d-block w-100 img-fluid" alt="Irla">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Image/ir.jpeg" class="d-block w-100 img-fluid" alt="IR">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Pestana Cartelera-->
+            <div class="tab-pane fade" id="cartelera" role="tabpanel" aria-labelledby="cartelera-tab">
+                <div class="container">
+                    <div class="container">
+                        <div class="row row-cols-12">
+                            <div class="card-group">
+                                <div class="card">
+                                  <img src="https://m.media-amazon.com/images/M/MV5BMWFiZjUwZmEtMGVjYi00MjI0LTk5MzAtMjM0MjRkODcyNjI5XkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Superman</h5>
+                                    <p class="card-text">Superman tiene una misión y es derrotar a Lex Luthor al igual que su universo de bolsillo que es peligroso.</p>
+                                    <p class="card-text"><small class="text-muted">70 Bs</small></p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <img src="https://d24ar.com/wp-content/uploads/2025/08/el-conjuro-4-82.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">El Conjuro</h5>
+                                    <p class="card-text">Nunca hagas cosas fuera de lo noprmal o anormal.</p>
+                                    <p class="card-text"><small class="text-muted">70 Bs</small></p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <img src="https://pics.filmaffinity.com/Pitufos-445839311-large.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Los Pitufos</h5>
+                                    <p class="card-text">¿Dónde está papá Pitufo? acompaña a los Pitufos en su busqueda.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                    <img src="https://mx.web.img2.acsta.net/img/0e/49/0e497a9663ddb21f09b2228438267994.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Toy Story 30 años</h5>
+                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="card-group">
+                                <div class="card">
+                                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8v1c_gAto9zjQOihpczRIJREyY-RGNXb1wA&s" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Corre o Muere</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">70 Bs</small></p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <img src="https://images.justwatch.com/poster/330025048/s718/los-4-fantasticos-2023.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Los 4 Fantáticos</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF-x8rKFyZMu3-AfnjLzgjGiMq-mso6SM32IBNp9vqqion264CGpE0YvrUgAKsndMOPkKd-QEI8os3XkZdzRChmCZ3igo9evdgeiao3pc" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Demon Slayer</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                    <img src="https://m.media-amazon.com/images/M/MV5BZDU5OWM2NDctZTA4MS00YTJmLWJiZTItOTFkZWUwMGU2OWU5XkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Los Tipos Malos 2</h5>
+                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="card-group">
+                                <div class="card">
+                                  <img src="https://m.media-amazon.com/images/M/MV5BMWFiZjUwZmEtMGVjYi00MjI0LTk5MzAtMjM0MjRkODcyNjI5XkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Superman</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">70 Bs</small></p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <img src="https://d24ar.com/wp-content/uploads/2025/08/el-conjuro-4-82.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">El Conjuro</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <img src="https://pics.filmaffinity.com/Pitufos-445839311-large.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Los Pitufos</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                    <img src="https://mx.web.img2.acsta.net/img/0e/49/0e497a9663ddb21f09b2228438267994.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Toy Story 30 años</h5>
+                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="card-group">
+                                <div class="card">
+                                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8v1c_gAto9zjQOihpczRIJREyY-RGNXb1wA&s" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Corre o Muere</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">70 Bs</small></p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <img src="https://images.justwatch.com/poster/330025048/s718/los-4-fantasticos-2023.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Los 4 Fantáticos</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF-x8rKFyZMu3-AfnjLzgjGiMq-mso6SM32IBNp9vqqion264CGpE0YvrUgAKsndMOPkKd-QEI8os3XkZdzRChmCZ3igo9evdgeiao3pc" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Demon Slayer</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                    <img src="https://m.media-amazon.com/images/M/MV5BZDU5OWM2NDctZTA4MS00YTJmLWJiZTItOTFkZWUwMGU2OWU5XkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Los Tipos Malos 2</h5>
+                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <!--Pestana gaming-->
+            <div class="tab-pane fade" id="Game" role="tabpanel" aria-labelledby="Game-tab">
+                <div class="container">
+                    <h2 class="mb-4">Juegos del momento</h2>
+                    <input type="file" id="imageInput" multiple accept="image/*" class="form-control mb-3">
+                    <div id="GameContainer">
+                        <div id="imageGame" class="Game slide" data-bs-ride="Game">
+                            <div class="Game-inner" id="GameImages">
+                                <div class="carousel-item active">
+                                    <img src="imageVI.png" class="d-block w-100 img-fluid" alt="Imagen 2">
+                                </div>
+                                <div class="Game-item">
+                                    <img src="imagedlt.png" class="d-block w-100 img-fluid" alt="Up">
+                                </div>
+                                <div class="Game-item">
+                                    <img src="imageS.png" class="d-block w-100 img-fluid" alt="BI">
+                                </div>
+                                <div class="Game-item">
+                                    <img src="imageSRC.png" class="d-block w-100 img-fluid" alt="Irla">
+                                </div>
+                                <div class="Game-item">
+                                    <img src="imageSMB3D.png" class="d-block w-100 img-fluid" alt="IR">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </div>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="script.js"></script>
+        <script>
+            // Script adicional para asegurar que las pestañas funcionen
+            document.addEventListener('DOMContentLoaded', function() {
+                // Asegurar que la primera pestaña esté visible
+                const homeTab = document.getElementById('home');
+                const homeButton = document.getElementById('home-tab');
+                
+                if (homeTab && homeButton) {
+                    homeTab.classList.add('show', 'active');
+                    homeButton.classList.add('active');
+                    homeButton.setAttribute('aria-selected', 'true');
+                }
+                
+                // Ocultar todas las demás pestañas
+                const allTabs = document.querySelectorAll('.tab-pane:not(#home)');
+                allTabs.forEach(tab => {
+                    tab.classList.remove('show', 'active');
+                });
+            });
+        </script>
     </body>
 </html>
